@@ -15,8 +15,10 @@ var config = {
 firebase.initializeApp(config);
 const database = firebase.database();
 window.fbdb = database;
-database.ref('/').on('value', snap => console.log(snap.val()))
+database.ref('/').on('value', snap => console.log(snap.val()));
+console.log("postits url key: ", btoa(window.location.href));
+var targetElement = document.getElementsByTagName('body')[0].appendChild(document.createElement('div'));
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  targetElement
 );

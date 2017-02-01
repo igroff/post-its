@@ -8,7 +8,7 @@ const PostItRoot = styled.div`
   position: absolute;
   height: 200px;
   width: 300px;
-  background-color: #FFFFA5;
+  background-color: rgba(2555, 255, 165, 0.2);
   left: ${props => props.xPos}px;
   top: ${props => props.yPos}px;
 `;

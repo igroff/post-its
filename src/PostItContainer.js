@@ -6,7 +6,9 @@ const Root = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
+  color: red;
 `;
+
 
 class PostItContainer extends Component {
   render() {
